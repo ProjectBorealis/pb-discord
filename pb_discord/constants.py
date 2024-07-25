@@ -63,6 +63,7 @@ class _Channels(EnvConfig, env_prefix="channels_"):
 
 Channels = _Channels()
 
+
 class _Roles(EnvConfig, env_prefix="roles_"):
     on_leave: int = 800250529259061278
     support: int = 803741037557186632
@@ -73,6 +74,7 @@ class _Roles(EnvConfig, env_prefix="roles_"):
     public_former_team: int = 802949984637943849
     public_playtester: int = 554090450210783254
     public_playtest_admin: int = 625415837641080853
+
 
 Roles = _Roles()
 
@@ -89,7 +91,7 @@ roles_to_teams = {
     "Concept Artist": "Concept Art",
     "Composer": "Music Production",
     "Design": "Design",
-    "Sound Designer": "Sound Design"
+    "Sound Designer": "Sound Design",
 }
 
 
@@ -223,6 +225,37 @@ class Colours:
     soft_red: int = 0xCD6D6D
     white: int = 0xFFFFFE
     yellow: int = 0xFFD241
+
+
+class _BaseURLs(EnvConfig, env_prefix="urls_"):
+
+    # Discord API
+    discord_api: str = "https://discordapp.com/api/v7/"
+
+    # GitHub
+    github_api: str = "https://api.github.com"
+
+    # Site
+    site_api: str = "https://api.projectborealis.com"
+
+
+BaseURLs = _BaseURLs()
+
+
+class _URLs(_BaseURLs):
+    pass
+
+
+URLs = _URLs()
+
+
+class _Keys(EnvConfig, env_prefix="api_keys_"):
+
+    github: str = ""
+    site_api: str = ""
+
+
+Keys = _Keys()
 
 BOT_DIR = os.path.dirname(__file__)
 PROJECT_ROOT = os.path.abspath(os.path.join(BOT_DIR, os.pardir))
