@@ -79,9 +79,9 @@ class _Roles(EnvConfig, env_prefix="roles_"):
 Roles = _Roles()
 
 roles_to_teams = {
-    "Team Lead": "Team Leads",
-    "Production": "Production",
     "Director": "Directors",
+    "Production": "Production",
+    "Team Lead": "Team Leads",
     "Art Direction": "Art Directors",
     "Public Relations": "Public Relations",
     "Programmer": "Programming",
@@ -92,6 +92,10 @@ roles_to_teams = {
     "Composer": "Music Production",
     "Design": "Design",
     "Sound Designer": "Sound Design",
+    "IT Department": "IT",
+    "DevOps": "DevOps",
+    "Voice Actor": "Voice Acting",
+    "Writer": "Writing",
 }
 
 
