@@ -91,8 +91,8 @@ roles_to_teams = {
     "Effects Artist": "VFX",
     "Concept Artist": "Concept Art",
     "Composer": "Music Production",
-    "Level Designer": "Level Design",
-    "Game Designer": "Game Design",
+    "Design": "Level Design",
+    "Game Design": "Game Design",
     "Sound Designer": "Sound Design",
     "IT Department": "IT",
     "DevOps": "DevOps",
@@ -257,8 +257,10 @@ URLs = _URLs()
 
 class _Keys(EnvConfig, env_prefix="api_keys_"):
 
-    github: str = ""
-    site_api: str = ""
+    github: str
+    site_api: str
+    game_project_id: str
+    appplications_project_id: str
 
 
 Keys = _Keys()
