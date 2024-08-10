@@ -11,7 +11,7 @@ discord-py = {extras = ["speedup"], version = "^2.4.0"}
 pydantic = "^2.8.2"
 pydantic-settings = "^2.3.4"
 coloredlogs = "^15.0.1"
-aiohttp = "^3.9.5"
+aiohttp = "^3.10.2"
 aiodns = "^3.2.0"
 colorama = { version = "^0.4.6", markers = "sys_platform == 'win32'" }
 rapidfuzz = "^3.9.4"
